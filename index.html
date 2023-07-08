@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Color app</title>
+<br><br>
+<style>*{font-size:50px; }
+body{background-color:azure;}
+</style>
+</head>
+<body>
+<center>
+<h1>Color me<h1>
+<form onsubmit="colorme()">
+<input type="submit" value="Mohe rang de" />
+</form>
+
+<script>
+function colorme()
+{
+event.preventDefault();
+let colors=["red","green","blue","gray","purple","pink","brown"];
+let r=parseInt(Math.random() * colors.length);
+document.body.style.background=colors[r];
+}
+</script>
+
+</center></body></html>
+
+
+
+
+
+
+
